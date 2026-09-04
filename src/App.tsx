@@ -22,6 +22,7 @@ const loves = [
     text: 'Это моё любимое мороженое 🩷 С любовью, Соня',
     image: iceCreamPhoto,
   },
+  { emoji: '✨', title: 'Мечта', text: 'Верить в чудеса и мечтать о самом волшебном' },
 ]
 
 function useHashRoute() {
