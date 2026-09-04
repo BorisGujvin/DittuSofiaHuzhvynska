@@ -151,6 +151,13 @@ main {
   box-shadow: 0 14px 28px rgba(255, 92, 147, 0.25);
 }
 
+a.love-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .love-emoji {
   font-size: 2.4rem;
   margin-bottom: 0.4rem;
