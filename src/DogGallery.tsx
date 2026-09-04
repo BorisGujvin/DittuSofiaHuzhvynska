@@ -6,6 +6,10 @@ const dogPhotos = [
     src: '/assets/images/AgACAgQAAxkBAAMHaprK4euum9r_9qzDTtFk0uTbNTcAAm8aaxswodFQvoPV4KMuMfsBAAMCAAN5AAM9BA.jpg',
     alt: 'София обнимает свою собачку',
   },
+  {
+    src: '/assets/images/AgACAgQAAxkBAAMXaprQTqwq65KaDiyp7EHIN5Fs__IAAtsaaxswodFQ1ONS_OOqZxcBAAMCAAN4AAM9BA.jpg',
+    alt: 'София с собачкой',
+  },
 ]
 
 function DogGallery() {
