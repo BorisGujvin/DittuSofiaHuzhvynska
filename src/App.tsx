@@ -3,6 +3,9 @@ import './App.css'
 const photo =
   '/assets/images/AgACAgQAAxkBAAMHaprK4euum9r_9qzDTtFk0uTbNTcAAm8aaxswodFQvoPV4KMuMfsBAAMCAAN5AAM9BA.jpg'
 
+const talentPhoto =
+  '/assets/images/AgACAgQAAxkBAAMPaprNEsKveMoNmetDOxio0mw9HCgAApcaaxswodFQX6DUZNuAuHgBAAMCAAN5AAM9BA.jpg'
+
 const loves = [
   { emoji: '🐶', title: 'Собачки', text: 'Лучший друг всегда рядом и обожает обнимашки' },
   { emoji: '🎨', title: 'Рисование', text: 'Яркие картинки и разноцветные фломастеры' },
@@ -62,6 +65,7 @@ function App() {
           <div className="talent-card">
             <span className="note">🎵</span>
             <h2>Пою и играю на пианино</h2>
+            <img className="talent-photo" src={talentPhoto} alt="София играет на пианино" />
             <p>
               Я обожаю петь песни и разучивать новые мелодии на пианино —
               музыка делает меня самой счастливой! 🎹🎤
