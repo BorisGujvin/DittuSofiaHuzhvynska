@@ -1,0 +1,34 @@
+:root {
+  --pink: #ff8fb1;
+  --pink-dark: #ff5c93;
+  --purple: #a78bfa;
+  --yellow: #ffd166;
+  --mint: #7fe0c9;
+  --text: #5a4b6b;
+  --text-h: #3d2c53;
+  --bg: #fff6fa;
+
+  font: 18px/145% 'Nunito', system-ui, sans-serif;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Baloo 2', 'Nunito', system-ui, sans-serif;
+  color: var(--text-h);
+}
