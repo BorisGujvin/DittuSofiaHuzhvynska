@@ -5,6 +5,9 @@ import DogGallery from './DogGallery'
 const photo =
   '/assets/images/AgACAgQAAxkBAAMZaprRQtOdHXN1JninfKSyMRi-on8AAvUaaxswodFQRxmIy2cIwbEBAAMCAAN5AAM9BA.jpg'
 
+const iceCreamPhoto =
+  '/assets/images/AgACAgQAAxkBAAMjaprT7R0Qzb5Zxwc17Iu1oU_1WZQAAhYbaxswodFQ-TfVHR2HHF0BAAMCAAN5AAM9BA.jpg'
+
 const loves = [
   { emoji: '🐶', title: 'Собачки', text: 'Лучший друг всегда рядом и обожает обнимашки', link: '#/dog' },
   { emoji: '🎨', title: 'Рисование', text: 'Яркие картинки и разноцветные фломастеры' },
@@ -12,7 +15,12 @@ const loves = [
   { emoji: '🎤', title: 'Пение', text: 'Петь любимые песни во весь голос' },
   { emoji: '📚', title: 'Сказки', text: 'Истории про приключения и волшебство' },
   { emoji: '🌈', title: 'Радуга', text: 'Всё яркое, блестящее и разноцветное' },
-  { emoji: '🍦', title: 'Мороженое', text: 'Особенно летом, особенно с посыпкой' },
+  {
+    emoji: '🍦',
+    title: 'Мороженое',
+    text: 'Это моё любимое мороженое 🩷 С любовью, Соня',
+    image: iceCreamPhoto,
+  },
 ]
 
 function useHashRoute() {
@@ -60,7 +68,11 @@ function App() {
             {loves.map((item) => {
               const content = (
                 <>
-                  <div className="love-emoji">{item.emoji}</div>
+                  {item.image ? (
+                    <img className="love-image" src={item.image} alt={item.title} />
+                  ) : (
+                    <div className="love-emoji">{item.emoji}</div>
+                  )}
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
                 </>

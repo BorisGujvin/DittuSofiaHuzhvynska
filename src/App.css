@@ -163,6 +163,14 @@ a.love-card {
   margin-bottom: 0.4rem;
 }
 
+.love-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 0.6rem;
+}
+
 .love-card h3 {
   margin: 0.2rem 0 0.4rem;
   font-size: 1.15rem;
