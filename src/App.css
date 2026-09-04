@@ -151,11 +151,15 @@ main {
   box-shadow: 0 14px 28px rgba(255, 92, 147, 0.25);
 }
 
-a.love-card {
+a.love-card,
+button.love-card {
   display: block;
+  width: 100%;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  font: inherit;
+  border: none;
 }
 
 .love-emoji {
