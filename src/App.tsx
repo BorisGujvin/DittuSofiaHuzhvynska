@@ -3,7 +3,7 @@ import './App.css'
 import DogGallery from './DogGallery'
 
 const photo =
-  '/assets/images/AgACAgQAAxkBAAMHaprK4euum9r_9qzDTtFk0uTbNTcAAm8aaxswodFQvoPV4KMuMfsBAAMCAAN5AAM9BA.jpg'
+  '/assets/images/AgACAgQAAxkBAAMZaprRQtOdHXN1JninfKSyMRi-on8AAvUaaxswodFQRxmIy2cIwbEBAAMCAAN5AAM9BA.jpg'
 
 const talentPhoto =
   '/assets/images/AgACAgQAAxkBAAMPaprNEsKveMoNmetDOxio0mw9HCgAApcaaxswodFQX6DUZNuAuHgBAAMCAAN5AAM9BA.jpg'
