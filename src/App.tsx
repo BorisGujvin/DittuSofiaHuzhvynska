@@ -4,7 +4,7 @@ import './DogGallery.css'
 import DogGallery from './DogGallery'
 
 const photo =
-  '/assets/images/AgACAgQAAxkBAAMZaprRQtOdHXN1JninfKSyMRi-on8AAvUaaxswodFQRxmIy2cIwbEBAAMCAAN5AAM9BA.jpg'
+  '/assets/images/AgACAgQAAxkBAAMpapwr78jPNc_lVr6DMyC0yAhoiEEAAsYPaxvuUeBQo_LqmM6DKcQBAAMCAAN5AAM9BA.jpg'
 
 const iceCreamPhoto =
   '/assets/images/AgACAgQAAxkBAAMjaprT7R0Qzb5Zxwc17Iu1oU_1WZQAAhYbaxswodFQ-TfVHR2HHF0BAAMCAAN5AAM9BA.jpg'
