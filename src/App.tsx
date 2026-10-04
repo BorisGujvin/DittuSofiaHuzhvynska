@@ -70,7 +70,7 @@ function App() {
           <img className="hero-photo" src={photo} alt="София обнимает свою собачку" />
         </div>
         <h1>Привет, я София! 👋</h1>
-        <p className="subtitle">Мне 9 лет, и это моя страничка ✨</p>
+        <p className="subtitle">Мне почти 10 лет, и это моя страничка ✨</p>
       </header>
 
       <main>
