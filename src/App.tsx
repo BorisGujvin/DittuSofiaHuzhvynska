@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import './DogGallery.css'
 import DogGallery from './DogGallery'
+import TestPage from './TestPage'
 
 const photo =
   '/assets/images/AgACAgQAAxkBAAMrapwsaSNmYTWig7b-TBxr3MOvGRgAAvUaaxswodFQRxmIy2cIwbEBAAMCAAN5AAM9BA.jpg'
@@ -50,7 +51,27 @@ function App() {
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [openImage])
 
-  if (hash === '#/dog') {
+  const normalizedHash = hash.toLowerCase()
+  const pathname = typeof window !== 'undefined' ? window.location.pathname.toLowerCase() : ''
+  const isTestRoute =
+    normalizedHash === '#/test' ||
+    normalizedHash === '#test' ||
+    normalizedHash === '#/тест' ||
+    normalizedHash === '#тест' ||
+    decodeURIComponent(normalizedHash) === '#/тест' ||
+    decodeURIComponent(normalizedHash) === '#тест' ||
+    pathname === '/test' ||
+    pathname === '/test/' ||
+    pathname === '/тест' ||
+    pathname === '/тест/' ||
+    decodeURIComponent(pathname) === '/тест' ||
+    decodeURIComponent(pathname) === '/тест/'
+
+  if (isTestRoute) {
+    return <TestPage />
+  }
+
+  if (normalizedHash === '#/dog' || normalizedHash === '#dog') {
     return <DogGallery />
   }
 
@@ -71,6 +92,11 @@ function App() {
         </div>
         <h1>Привет, я София! 👋</h1>
         <p className="subtitle">Мне почти 10 лет, и это моя страничка ✨</p>
+        <div className="hero-nav">
+          <a className="test-link" href="#/test">
+            Тест
+          </a>
+        </div>
       </header>
 
       <main>
