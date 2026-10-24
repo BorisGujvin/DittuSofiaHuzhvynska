@@ -13,7 +13,7 @@ const portfolioPhotos: PortfolioItem[] = [
   {
     id: 'photo-1',
     src: '/assets/images/AgACAgQAAxkBAAM_atyEiYWvbVKEpMsTFdDYtmsF3vgAAngPaxuBSOhSLS6O934ZYFwBAAMCAAN5AAM9BA.jpg',
-    title: 'Аквагрим «Волшебный образ»',
+    title: 'Аквагрим «Волшебный аватар»',
     description: 'Творческий аквагрим в сказочных сине-голубых тонах ✨',
     alt: 'София с волшебным сине-голубым аквагримом',
   },
