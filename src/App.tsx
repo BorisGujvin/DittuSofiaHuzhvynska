@@ -3,6 +3,7 @@ import './App.css'
 import './DogGallery.css'
 import DogGallery from './DogGallery'
 import TestPage from './TestPage'
+import PortfolioPage from './PortfolioPage'
 
 const photo =
   '/assets/images/AgACAgQAAxkBAAMrapwsaSNmYTWig7b-TBxr3MOvGRgAAvUaaxswodFQRxmIy2cIwbEBAAMCAAN5AAM9BA.jpg'
@@ -12,7 +13,12 @@ const iceCreamPhoto =
 
 const loves = [
   { emoji: '🐶', title: 'Собачки', text: 'Лучший друг всегда рядом и обожает обнимашки', link: '#/dog' },
-  { emoji: '🎨', title: 'Рисование', text: 'Яркие картинки и разноцветные фломастеры' },
+  {
+    emoji: '🎨',
+    title: 'Рисование и творчество',
+    text: 'Яркие картинки, аквагрим и моё портфолио',
+    link: '#/portfolio',
+  },
   { emoji: '🎹', title: 'Пианино', text: 'Разучивать новые мелодии на пианино' },
   { emoji: '🎤', title: 'Пение', text: 'Петь любимые песни во весь голос' },
   { emoji: '📚', title: 'Сказки', text: 'Истории про приключения и волшебство' },
@@ -67,6 +73,26 @@ function App() {
     decodeURIComponent(pathname) === '/тест' ||
     decodeURIComponent(pathname) === '/тест/'
 
+  const isPortfolioRoute =
+    normalizedHash === '#/portfolio' ||
+    normalizedHash === '#portfolio' ||
+    normalizedHash === '#/портфолио' ||
+    normalizedHash === '#портфолио' ||
+    decodeURIComponent(normalizedHash) === '#/portfolio' ||
+    decodeURIComponent(normalizedHash) === '#portfolio' ||
+    decodeURIComponent(normalizedHash) === '#/портфолио' ||
+    decodeURIComponent(normalizedHash) === '#портфолио' ||
+    pathname === '/portfolio' ||
+    pathname === '/portfolio/' ||
+    pathname === '/портфолио' ||
+    pathname === '/портфолио/' ||
+    decodeURIComponent(pathname) === '/портфолио' ||
+    decodeURIComponent(pathname) === '/портфолио/'
+
+  if (isPortfolioRoute) {
+    return <PortfolioPage />
+  }
+
   if (isTestRoute) {
     return <TestPage />
   }
@@ -93,6 +119,9 @@ function App() {
         <h1>Привет, я София! 👋</h1>
         <p className="subtitle">Мне почти 10 лет, и это моя страничка ✨</p>
         <div className="hero-nav">
+          <a className="portfolio-link" href="#/portfolio">
+            🎨 Портфолио
+          </a>
           <a className="test-link" href="#/test">
             Тест
           </a>
