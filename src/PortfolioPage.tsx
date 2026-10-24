@@ -14,8 +14,8 @@ const portfolioPhotos: PortfolioItem[] = [
     id: 'photo-1',
     src: '/assets/images/AgACAgQAAxkBAAM_atyEiYWvbVKEpMsTFdDYtmsF3vgAAngPaxuBSOhSLS6O934ZYFwBAAMCAAN5AAM9BA.jpg',
     title: 'Аквагрим «Волшебный аватар»',
-    description: 'Творческий аквагрим в сказочных сине-голубых тонах ✨',
-    alt: 'София с волшебным сине-голубым аквагримом',
+    description: 'Всё я сделала сама! Творческий аквагрим в сказочных сине-голубых тонах ✨',
+    alt: 'София с волшебным сине-голубым аквагримом — сделала сама',
   },
 ]
 
@@ -68,7 +68,7 @@ function PortfolioPage() {
           ← Назад на главную
         </a>
         <h1>🎨 Портфолио</h1>
-        <p className="subtitle">Мои творческие работы, рисунки и образы ✨</p>
+        <p className="subtitle">Здесь всё я сделала сама! Мои творческие работы, рисунки и образы ✨</p>
       </header>
 
       <main className="portfolio-main">
